@@ -1,24 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 :root {
-    --color-gradient: linear-gradient(90deg,rgba(144, 217, 224, 1) 0%, rgba(84, 96, 230, 1) 100%);
-    --color-gradient-inverted:  linear-gradient(270deg,rgba(144, 217, 224, 1) 0%, rgba(84, 96, 230, 1) 100%);
-}
-
-p, h1, h2, h3, h4, h5, h6, span, div {
-    color: var(--color-white);
+  --color-gradient: linear-gradient(
+    90deg,
+    rgba(144, 217, 224, 1) 0%,
+    rgba(84, 96, 230, 1) 100%
+  );
+  --color-gradient-inverted: linear-gradient(
+    270deg,
+    rgba(144, 217, 224, 1) 0%,
+    rgba(84, 96, 230, 1) 100%
+  );
 }
 
 .bg-gradient {
-    background-image: var(--color-gradient);
+  background-image: var(--color-gradient);
 }
 .bg-gradient:hover {
-    background-image: var(--color-gradient-inverted);
+  background-image: var(--color-gradient-inverted);
 }

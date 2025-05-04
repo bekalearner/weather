@@ -1,3 +1,3 @@
 import Card from './index.vue'
 
-export { Card}
+export { Card }

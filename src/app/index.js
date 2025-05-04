@@ -1,7 +1,12 @@
-import { createApp } from "vue";
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
 
 import '@/app/styles/main.css'
-import App from "./App.vue";
+import App from './App.vue'
 
-export default createApp(App)
+const pinia = createPinia()
+const app = createApp(App)
 
+app.use(pinia)
+
+export default app

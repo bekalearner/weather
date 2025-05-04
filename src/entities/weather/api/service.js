@@ -1,4 +1,4 @@
-import { fetch } from "@/shared";
+import { fetch } from '@/shared'
 
 const path = '/forecast.json'
 
