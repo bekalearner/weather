@@ -9,14 +9,14 @@
 
 :root {
   --color-gradient: linear-gradient(
-    90deg,
-    rgba(144, 217, 224, 1) 0%,
-    rgba(84, 96, 230, 1) 100%
+    270deg,
+    rgba(46, 94, 74, 1) 0%,
+    rgba(31, 166, 196, 1) 100%
   );
   --color-gradient-inverted: linear-gradient(
     270deg,
-    rgba(144, 217, 224, 1) 0%,
-    rgba(84, 96, 230, 1) 100%
+    rgba(46, 94, 74, 1) 0%,
+    rgba(31, 166, 196, 1) 100%
   );
 }
 

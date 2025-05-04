@@ -4,15 +4,15 @@
 
   /* Primary Colors - gray palette */
   --color-primary-0: #ffffff;
-  --color-primary-10: #d2d4d8;
-  --color-primary-20: #a8abb2;
-  --color-primary-30: #7f848e;
-  --color-primary-40: #585f6b;
-  --color-primary-50: #333c4a;
-  --color-primary-60: #2a313c;
-  --color-primary-70: #21262e;
-  --color-primary-80: #191c21;
-  --color-primary-90: #0f1114;
+  --color-primary-10: #d3ddd8;
+  --color-primary-20: #a8bcb2;
+  --color-primary-30: #7f9c8e;
+  --color-primary-40: #567c6b;
+  --color-primary-50: #2e5e4a;
+  --color-primary-60: #274b3c;
+  --color-primary-70: #1f392e;
+  --color-primary-80: #182821;
+  --color-primary-90: #101814;
   --color-primary-100: #000000;
 
   /* Success Colors - green palette */
