@@ -6,3 +6,19 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
+
+:root {
+    --color-gradient: linear-gradient(90deg,rgba(144, 217, 224, 1) 0%, rgba(84, 96, 230, 1) 100%);
+    --color-gradient-inverted:  linear-gradient(270deg,rgba(144, 217, 224, 1) 0%, rgba(84, 96, 230, 1) 100%);
+}
+
+p, h1, h2, h3, h4, h5, h6, span, div {
+    color: var(--color-white);
+}
+
+.bg-gradient {
+    background-image: var(--color-gradient);
+}
+.bg-gradient:hover {
+    background-image: var(--color-gradient-inverted);
+}

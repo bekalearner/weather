@@ -3,7 +3,10 @@
   import DescriptionsItem from "./parts/descriptions-item.vue";
 
   const props = defineProps({
-    data: Array,
+    data: {
+      type: Array,
+      required: true,
+    },
     title: String,
     size: {
       type: String,

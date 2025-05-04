@@ -1,7 +1,7 @@
 <script setup>
 import { reactive } from "vue";
 import { Button, Input, useIsOpened } from "@/shared/index.js";
-import { X, MapPin } from "lucide-vue-next";
+import { MapPin } from "lucide-vue-next";
 
 const emit = defineEmits(['submit'])
 defineProps({
@@ -10,7 +10,7 @@ defineProps({
     default: false,
   }
 })
-const { isOpened, close, open } = useIsOpened()
+const { isOpened, open } = useIsOpened()
 const formData = reactive({
   q: '',
   lang: 'ru',
@@ -25,28 +25,30 @@ function handleSubmit() {
 </script>
 
 <template>
-  <Button v-show="!isOpened" type="gradient" fullsize @click="open">
+  <Button v-show="!isOpened" appearance="gradient" fullsize @click="open">
     Изменить город
     <template #icon="{ size }">
       <MapPin :size="size"/>
     </template>
   </Button>
-  <form v-show="isOpened" class="w-full d-flex gap-4" @submit.prevent>
+  <form v-show="isOpened" class="w-full d-flex gap-4" @submit.prevent="handleSubmit">
     <Input
       v-model="formData.q"
       placeholder="Введите город"
       type="text"
       size="medium"
-      style="flex: 0 0 70%;"
+      required
       @keyup.enter="handleSubmit"/>
-    <Button type="gradient" size="medium" fullsize :loading="isLoading" @click="handleSubmit">
-      Сохранить
-    </Button>
-    <Button style="flex: 0 0 5%" type="danger" size="medium" fullsize @click="close">
-      <template #icon="{ size }">
-        <X :size="size"/>
-      </template>
-    </Button>
+    <div class="d-flex">
+      <Button type="submit" appearance="gradient" size="medium" fullsize :loading="isLoading">
+        Сохранить
+      </Button>
+<!--      <Button appearance="danger" size="medium" fullsize @click="close">-->
+<!--        <template #icon="{ size }">-->
+<!--          <X :size="size"/>-->
+<!--        </template>-->
+<!--      </Button>-->
+    </div>
   </form>
 </template>
 

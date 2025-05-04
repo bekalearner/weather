@@ -12,15 +12,15 @@
 
 <template>
   <div
-    class="d-flex gap-16 uppercase"
+    class="d-flex justify-between uppercase mb-14"
     :class="{
       'text-lg': props.size === 'small',
       'text-xl': props.size === 'medium',
       'text-2xl': props.size === 'large',
     }"
   >
-    <div class="w-full font-bold">{{ label }}</div>
-    <div class="w-full">{{ value }}</div>
+    <div class="font-bold">{{ label }}</div>
+    <div>{{ value }}</div>
   </div>
 </template>
 

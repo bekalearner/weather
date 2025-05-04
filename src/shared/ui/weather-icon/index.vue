@@ -41,7 +41,6 @@ const props =  defineProps({
   code: {
     type: Number,
     default: 1000,
-    validator: (value) => Object.keys(weatherCodes).includes(value.toString())
   },
   size: {
     type: Number,

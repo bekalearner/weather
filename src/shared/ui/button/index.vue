@@ -2,7 +2,7 @@
 import {computed, defineProps} from 'vue'
 
   const props = defineProps({
-    type: {
+    appearance: {
       type: String,
       default: 'primary',
       validator: (value) => ['primary', 'secondary', 'danger', 'success', 'warning', 'info', 'gradient'].includes(value)
@@ -34,13 +34,13 @@ import {computed, defineProps} from 'vue'
 <template>
   <button
     :class="{
-      'text-white bg-primary-50': type === 'primary',
-      'text-white bg-secondary-50': type === 'secondary',
-      'text-white bg-danger-50': type === 'danger',
-      'text-white bg-success-50': type ==='success',
-      'text-white bg-warning-50': type === 'warning',
-      'text-white bg-info-50': type === 'info',
-      'text-white bg-gradient': type === 'gradient',
+      'text-white bg-primary-50': appearance === 'primary',
+      'text-white bg-secondary-50': appearance === 'secondary',
+      'text-white bg-danger-50': appearance === 'danger',
+      'text-white bg-success-50': appearance ==='success',
+      'text-white bg-warning-50': appearance === 'warning',
+      'text-white bg-info-50': appearance === 'info',
+      'text-white bg-gradient': appearance === 'gradient',
 
       'btn btn-sm': size === 'small',
       'btn btn-md': size === 'medium',
@@ -49,16 +49,16 @@ import {computed, defineProps} from 'vue'
       'w-full': fullsize,
 
     }"
-    :disabled="props.disabled"
+    :disabled="disabled"
   >
-    <span class="d-flex justify-center items-center" :style="{ visibility: props.loading ? 'hidden' : 'visible'}">
+    <span class="d-flex justify-center items-center" :style="{ visibility: loading ? 'hidden' : 'visible'}">
       <slot/>
     </span>
     <span class="d-flex justify-center items-center">
       <slot :size="iconSize" name="icon"/>
     </span>
     <span
-      :class="props.loading && 'spinner'"
+      :class="loading && 'spinner'"
     ></span>
   </button>
 </template>
