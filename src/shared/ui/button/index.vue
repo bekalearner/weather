@@ -68,7 +68,7 @@
     <span class="flex justify-center items-center">
       <slot :size="iconSize" name="icon" />
     </span>
-    <span v-show="loading" :class="loading && 'spinner'"></span>
+    <span :class="loading && 'spinner'"></span>
   </button>
 </template>
 

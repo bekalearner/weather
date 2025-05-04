@@ -1,1 +1,1 @@
-export * from './change-city';
+export * from './change-city'

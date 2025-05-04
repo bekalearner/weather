@@ -9,7 +9,7 @@
 
 :root {
   --color-gradient: linear-gradient(
-    90deg,
+    270deg,
     rgba(46, 94, 74, 1) 0%,
     rgba(31, 166, 196, 1) 100%
   );

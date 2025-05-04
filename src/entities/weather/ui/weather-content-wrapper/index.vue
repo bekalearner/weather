@@ -1,13 +1,13 @@
 <script setup>
   // import { getWeatherCategory } from '@/shared/index.js'
   // import { computed, ref, watch } from 'vue'
-
+  //
   // const props = defineProps({
   //   code: {
   //     type: Number,
   //   },
   // })
-
+  //
   // const videoRef = ref(null)
   //
   // const weatherCategory = computed(() => {
@@ -23,7 +23,7 @@
   <div class="content-wrapper">
     <!-- Video Background -->
     <div class="video-background">
-      <video autoplay muted loop class="background-video">
+      <video ref="videoRef" autoplay muted loop class="background-video">
         <source src="/weather/bg/windy.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>

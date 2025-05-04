@@ -1,3 +1,3 @@
 import WeatherCard from './index.vue'
 
-export { WeatherCard}
+export { WeatherCard }
