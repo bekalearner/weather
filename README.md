@@ -1,29 +1,36 @@
-# weather
+# 🌦 Weather App / Погодное Приложение
 
-This template should help get you started developing with Vue 3 in Vite.
+> 📌 A simple weather app built with **Vue 3**, **Pinia** for state management, and **WeatherAPI.com** for weather data.  
+> 📌 Простое погодное приложение, созданное с использованием **Vue 3**, **Pinia** для управления состоянием и **WeatherAPI.com** для получения погодных данных.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Features / Возможности
 
-## Customize configuration
+- 🌤 View multi-day weather forecast  
+  Просмотр прогноза погоды на несколько дней
+- 🌍 Multi-language support (e.g. Russian)  
+  Поддержка нескольких языков (например, русского)
+- 🌐 Integration with [WeatherAPI.com](https://www.weatherapi.com/)  
+  Интеграция с [WeatherAPI.com](https://www.weatherapi.com/)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## 🧱 Tech Stack / Стек Технологий
 
-```sh
+- 🔧 [Vue 3](https://vuejs.org/) – Core Framework / Основной фреймворк
+- 🔧 [Pinia](https://pinia.vuejs.org/) – State Management / Управление состоянием
+- 🔧 [Vite](https://vitejs.dev/) – Build Tool / Инструмент сборки
+- 🔧 [WeatherAPI.com](https://www.weatherapi.com/) – Weather Data API / API для получения погоды
+
+---
+
+## ⚙️ Installation / Установка
+
+> 📌 Make sure you have **Node.js** and **Yarn** installed.  
+> 📌 Убедитесь, что у вас установлены **Node.js** и **Yarn**.
+
+```bash
+git clone https://github.com/bekalearner/weather-app.git
+cd weather-app
 yarn install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-yarn run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-yarn run build
-```

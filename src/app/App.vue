@@ -8,7 +8,7 @@
 
   onBeforeMount(async () => {
     await store.getWeather({
-      q: 'Лондон',
+      q: 'Бишкек',
       lang: 'ru',
       days: 4,
     })

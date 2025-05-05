@@ -5,7 +5,7 @@ const fetch = (path, method, body) => {
     method,
     url: path,
     [method === 'get' ? 'params' : 'data']: {
-      key: import.meta.env.VITE_WEATHER_API_KEY,
+      key: import.meta.env.VITE_WEATHER_APP_API_KEY,
       ...body,
     },
   })
